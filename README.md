@@ -69,3 +69,62 @@ Machine Learning (ML) is a subset of artificial intelligence that focuses on the
 ### Model Deployment
 - Integrate model into production environment.
 - Monitor and maintain model performance.
+
+## Differences Between AI, ML, and DL
+
+### Artificial Intelligence (AI)
+- **Definition**: Machines mimicking human intelligence that are programmed to think and learn.
+- **Applications**: Virtual assistants (Siri, Alexa), autonomous vehicles, and recommendation systems.
+- **Example**: Chatbots that can understand and respond to human language.
+
+### Machine Learning (ML)
+- **Definition**: AI subset where machines learn from data without being explicitly programmed.
+- **Applications**: Fraud detection, spam filtering, image recognition.
+- **Example**: Email spam filters that improve over time by learning from user actions.
+
+### Deep Learning (DL)
+- **Definition**: ML subset that uses artificial neural networks with many layers to learn and make decisions on data.
+- **Applications**: Speech recognition, natural language processing, computer vision.
+- **Example**: Image recognition in self-driving cars.
+
+### Main Differences
+- **AI**: The broadest concept.
+- **ML**: A way to achieve AI through data-driven learning.
+- **DL**: A specialized ML technique using complex neural networks.
+
+## AI Classification
+
+### Weak AI (Narrow AI)
+- **Definition**: Designed for specific tasks.
+- **Example**: Chess-playing computers.
+
+### Strong AI (Artificial General Intelligence - AGI)
+- **Definition**: Hypothetical AI with human-like consciousness.
+- **Example**: Not yet achieved, often seen in science fiction.
+
+## Data Preprocessing Steps
+
+1. **Getting Dataset**: Obtain the dataset from relevant sources. 
+2. **Importing Libraries**: Load necessary Python libraries. Example: pandas for data manipulation, sklearn for preprocessing
+3. **Importing Datasets**: Load data into your working environment. Example: Using pandas.read_csv() to load a CSV file
+4. **Finding Missing Values**: Identify and handle incomplete data. Example: Using df.isnull().sum() to count missing values
+5. **Encoding Categorical Data**: Convert text data to numerical format for machine learning algorithms. Example: Using sklearn's LabelEncoder for ordinal data 
+6. **Splitting Dataset**: Divide data into training and test sets Example: Using train_test_split from sklearn
+7. **Feature Scaling**: Normalize numerical features
+Example: Using StandardScaler from sklearn)
+
+## Data Preprocessing Steps
+
+1. **Getting Dataset**: Obtain the dataset from relevant sources.
+
+2. **Importing Libraries**: Load necessary Python libraries. `pandas` for data manipulation, `sklearn` for preprocessing.
+
+3. **Importing Datasets**: Load dataset into your working environment. Using `pandas.read_csv()` to load a CSV file.
+
+4. **Finding Missing Values**: Identify and handle incomplete data. Using `df.isnull().sum()` to count missing values.
+
+5. **Encoding Categorical Data**: Convert text data to numerical format for machine learning algorithms. Using `sklearn's LabelEncoder` for ordinal data.
+
+6. **Splitting Dataset**: Divide dataset into training and test sets. Using `train_test_split` from `sklearn`.
+
+7. **Feature Scaling**: Normalize numerical features. Using `StandardScaler` from `sklearn`.
