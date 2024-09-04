@@ -104,17 +104,6 @@ Machine Learning (ML) is a subset of artificial intelligence that focuses on the
 
 ## Data Preprocessing Steps
 
-1. **Getting Dataset**: Obtain the dataset from relevant sources. 
-2. **Importing Libraries**: Load necessary Python libraries. Example: pandas for data manipulation, sklearn for preprocessing
-3. **Importing Datasets**: Load data into your working environment. Example: Using pandas.read_csv() to load a CSV file
-4. **Finding Missing Values**: Identify and handle incomplete data. Example: Using df.isnull().sum() to count missing values
-5. **Encoding Categorical Data**: Convert text data to numerical format for machine learning algorithms. Example: Using sklearn's LabelEncoder for ordinal data 
-6. **Splitting Dataset**: Divide data into training and test sets Example: Using train_test_split from sklearn
-7. **Feature Scaling**: Normalize numerical features
-Example: Using StandardScaler from sklearn)
-
-## Data Preprocessing Steps
-
 1. **Getting Dataset**: Obtain the dataset from relevant sources.
 
 2. **Importing Libraries**: Load necessary Python libraries. `pandas` for data manipulation, `sklearn` for preprocessing.
@@ -128,3 +117,26 @@ Example: Using StandardScaler from sklearn)
 6. **Splitting Dataset**: Divide dataset into training and test sets. Using `train_test_split` from `sklearn`.
 
 7. **Feature Scaling**: Normalize numerical features. Using `StandardScaler` from `sklearn`.
+
+## Features & Labels
+- **Features**: An independent property of the training data, typically represented by two or more columns used to make predictions in a machine learning model.
+    - `Example`: Housing price predictors: bedrooms, size, location.
+
+- **Labels**: Labels are the output variables or the target that the machine learning model aims to predict. 
+    - `Example`: In a housing price prediction model, the label would be the price of the house.
+
+## Supervised Learning
+
+- **Goal**: Predict outcomes for new data based on labeled training data.
+- **Algos**: Decision Trees, Random Forest, SVM
+- **Types**: 
+    - **Classification**: Predict categorical outcomes.
+    - **Regression**: Predict continuous outcomes.
+
+## Unsupervised Learning
+- **Goal**: Find patterns or structures in unlabeled data without any prior training of data.
+- **Algos**: k-Means Clustering, Neural networks
+- **Types**:
+    - **Clustering**: Group similar data points.
+    - **Association**: Discover rules that describe large portions of data. (buying bread + butter)
+
