@@ -67,7 +67,7 @@ Where:
 - The data shows clear non-linear trends when plotted
 
 
-### Code
+## Code
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -124,7 +124,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
-# Sample Data
+# Larger dataset
 data = {
     'Credit_Score': [650, 700, 620, 720, 630, 710, 680, 640, 750, 690],
     'Annual_Income': [40000, 60000, 35000, 80000, 45000, 75000, 55000, 38000, 90000, 50000],
@@ -159,3 +159,36 @@ print(f"Credit card approval prediction: {'Approved' if prediction[0] == 1 else 
 ```
 
 
+## Decision Trees
+A Decision Tree is a supervised learning algorithm used for both classification and regression tasks. It splits the data into subsets based on the most significant feature.
+
+### Components
+- **Root Node**: Top node, represents entire dataset.
+- **Decision Node**: Intermediate nodes that splits based on a feature.
+- **Leaf Node**: Final node that represents the predicted outcome.
+- **Branches**: Connections between nodes representing the decision flow.
+
+`Real-life scenario:` Predicting whether a customer will **churn** based on attributes like usage, customer service calls, and contract duration.
+
+### How It Works
+1. Choose the best feature using metrics like `Gini Index` or `Information Gain`.
+2. Split the dataset into subsets.
+3. Repeat the process until a stopping criterion is met (e.g., all leaves are pure).
+
+### Code
+```python
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import train_test_split
+
+# Sample data
+X = [[10, 20], [15, 30], [25, 45], [35, 55]]
+y = [0, 0, 1, 1]
+
+# Split and train
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+clf = DecisionTreeClassifier()
+clf.fit(X_train, y_train)
+
+# Prediction
+prediction = clf.predict(X_test)
+```
