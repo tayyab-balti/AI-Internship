@@ -79,7 +79,7 @@ Machine Learning (ML) is a subset of artificial intelligence that focuses on the
 
 ### Machine Learning (ML)
 - **Definition**: AI subset where machines learn from data without being explicitly programmed.
-- **Applications**: Fraud detection, spam filtering, image recognition.
+- **Applications**: Fraud detection, spam filtering, customer segmentation.
 - **Example**: Email spam filters that improve over time by learning from user actions.
 
 ### Deep Learning (DL)
@@ -138,5 +138,5 @@ Machine Learning (ML) is a subset of artificial intelligence that focuses on the
 - **Algos**: k-Means Clustering, Neural networks
 - **Types**:
     - **Clustering**: Group similar data points.
-    - **Association**: Discover rules that describe large portions of data. (buying bread + butter)
+    - **Association**: Discover rules that describe large portions of data. (Buying a laptop + laptop accessories)
 
