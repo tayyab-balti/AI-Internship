@@ -5,10 +5,11 @@ Linear Regression is a statistical method used to model the relationship between
 `Real-life scenario`: Predicting house prices based on square footage.
 
 ## Multiple Linear Regression
-Involves multiple independent variables (X1, X2, ..., Xn) and one dependent variable (Y).
+Involves multiple independent variables (X₁, X₂, ... Xₙ) and one dependent variable (Y).
 
 `Equation`: Y = m₁X₁ + m₂X₂ + ... + mₙXₙ + c
 
+Where:
 - **Y**: Dependent variable
 - **X**: Independent variable
 - **m**: Slope/Coefficient (shows how much `y` changes with one-unit change in `X`)
@@ -61,3 +62,34 @@ Where:
 3. You need to model curved relationships
 4. The data shows clear non-linear trends when plotted
 
+
+## Code
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import PolynomialFeatures
+
+# Sample data
+X = np.array([1, 2, 3, 4, 5]).reshape(-1, 1)
+y = np.array([1, 4, 9, 16, 25])
+
+# Transform the features to polynomial (degree 2)
+poly = PolynomialFeatures(degree=2)
+X_poly = poly.fit_transform(X)
+
+# Fit the polynomial regression model
+model = LinearRegression()
+model.fit(X_poly, y)
+
+# Predict using the polynomial model
+y_pred = model.predict(X_poly)
+
+# Plot the results
+plt.scatter(X, y, color='blue')  # Original data points
+plt.plot(X, y_pred, color='red')  # Fitted polynomial curve
+plt.title('Polynomial Regression (degree 2)')
+plt.xlabel('X')
+plt.ylabel('y')
+plt.show()
+```
