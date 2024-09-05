@@ -1,6 +1,6 @@
-# Introduction
+# Linear Regression
 
-Linear Regression is a statistical method used to model the relationship between a dependent variable and one or more independent variables. It assumes a linear relationship between the variables.
+ It is a statistical method used to model the relationship between a dependent variable and one or more independent variables. It assumes a linear relationship between the variables.
 
 `Real-life scenario`: Predicting house prices based on square footage.
 
