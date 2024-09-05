@@ -7,11 +7,11 @@ Linear Regression is a statistical method used to model the relationship between
 ## Multiple Linear Regression
 Involves multiple independent variables (X1, X2, ..., Xn) and one dependent variable (Y).
 
-`Formula`: Y = m₁X₁ + m₂X₂ + ... + mₙXₙ + c
+`Equation`: Y = m₁X₁ + m₂X₂ + ... + mₙXₙ + c
 
 - **Y**: Dependent variable
 - **X**: Independent variable
-- **m**: Slope (shows how much `y` changes with one-unit change in `X`)
+- **m**: Slope/Coefficient (shows how much `y` changes with one-unit change in `X`)
 - **c**: Y-intercept (value of `y` when `X` is 0)
 
 `Real-life scenario`: Predicting a car's fuel efficiency based on its weight, horsepower, and age.
@@ -40,4 +40,24 @@ predicted_efficiency = model.predict([[1600, 145, 2]])
 print(f"Predicted Fuel Efficiency: {predicted_efficiency[0]}")
 ```
 
+
+## Polynomial Regression
+Polynomial Regression is a powerful technique for modeling non-linear relationships as an nth degree polynomial. While more complex than linear regression, it offers greater flexibility in capturing real-world phenomena that often exhibit curvilinear patterns.
+
+`Equation`: Y = β₀ + β₁X + β₂X² + ... + βₙXⁿ + ε
+
+Where:
+- Y is the dependent variable
+- X is the independent variable
+- β₀, β₁, β₂, ..., βₙ are the coefficients
+- n is the degree of the polynomial
+- ε is the error term
+
+`Real-life scenario`: Modeling the growth of a plant over time, where it grows slowly at first, accelerates, and then slows down, capturing the non-linear growth pattern.
+
+## Where to Use
+1. The relationship between variables is known to be non-linear
+2. Linear regression doesn't provide a good fit to the data
+3. You need to model curved relationships
+4. The data shows clear non-linear trends when plotted
 
