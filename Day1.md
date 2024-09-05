@@ -1,0 +1,149 @@
+# Machine Learning from Scratch
+
+## Overview
+Machine Learning (ML) is a subset of artificial intelligence that focuses on the development of algorithms and statistical models that enable computers to perform tasks without explicit instructions, relying instead on patterns and inference.
+
+## How It Works
+
+### Training Phase
+1. **Input Dataset**: Collect and preprocess the data.
+2. **Feed into Algorithm**: Use the data to train the machine learning model.
+3. **Learn from Data**: The algorithm identifies patterns and performs classification tasks.
+
+### Testing Phase
+1. **Introduce New Dataset**: Present new, unseen data to the model.
+2. **Model**: The trained model processes the new data.
+3. **Build Logical Models**: Apply the learned patterns from the training phase.
+4. **Apply on New Data**: Use the model to make predictions.
+5. **Give Output**: Generate predictions based on the new data.
+
+
+## Characteristics of Machine Learning
+- **Automated Data Visualization**: Ability to automatically visualize data patterns.
+- **Precise Data Analysis**: High accuracy in analyzing large datasets.
+- **Business Intelligence**: Provides valuable insights for strategic decision-making.
+
+## Pros of Machine Learning
+- **Complex Problem Solving**: Effective in resolving intricate problems.
+- **Automation**: Automates repetitive tasks, increasing efficiency.
+- **Trend and Pattern Identification**: Identifies trends and patterns (e.g., buying habits on Amazon).
+- **Wide Range of Applications**: Applicable in various fields such as medical, finance, and object detection.
+
+## Cons of Machine Learning
+- **Data Acquisition**: Requires large datasets for training.
+- **Error-Prone**: Highly sensitive to incorrect or biased data.
+- **Algorithm Selection**: Choosing the right algorithm can be challenging.
+- **Time-Consuming**: Training models can be time-intensive.
+- **Additional Resources**: May require substantial computational resources.
+
+
+## Classification of Machine Learning
+- **Supervised Learning**: Uses labeled data to train algorithms (e.g., spam filtering).
+- **Unsupervised Learning**: Identifies patterns in unlabeled data.
+- **Reinforcement Learning**: An agent learns to make decisions by performing actions and receiving rewards or penalties.
+
+
+## Machine Learning Life Cycle
+
+### Data Collection
+- Gather relevant data from various sources.
+- Ensure data quality and quantity.
+
+### Data Preparation
+- Clean and preprocess raw data.
+- Handle missing values and outliers.
+
+### Data Wrangling
+- Transform and structure data for analysis.
+- Feature engineering and selection.
+
+### Data Modeling
+- Choose appropriate ML algorithms.
+- Define model architecture.
+
+### Model Training
+- Feed prepared data into the model.
+- Adjust model parameters iteratively.
+
+### Model Testing
+- Evaluate model performance on unseen data.
+- Fine-tune model based on results.
+
+### Model Deployment
+- Integrate model into production environment.
+- Monitor and maintain model performance.
+
+
+## Differences Between AI, ML, and DL
+
+### Artificial Intelligence (AI)
+- **Definition**: Machines mimicking human intelligence that are programmed to think and learn.
+- **Applications**: Virtual assistants (Siri, Alexa), autonomous vehicles, and recommendation systems.
+- **Example**: Chatbots that can understand and respond to human language.
+
+### Machine Learning (ML)
+- **Definition**: AI subset where machines learn from data without being explicitly programmed.
+- **Applications**: Fraud detection, spam filtering, customer segmentation.
+- **Example**: Email spam filters that improve over time by learning from user actions.
+
+### Deep Learning (DL)
+- **Definition**: ML subset that uses artificial neural networks with many layers to learn and make decisions on data.
+- **Applications**: Speech recognition, natural language processing, computer vision.
+- **Example**: Image recognition in self-driving cars.
+
+### Main Differences
+- **AI**: The broadest concept.
+- **ML**: A way to achieve AI through data-driven learning.
+- **DL**: A specialized ML technique using complex neural networks.
+
+
+## AI Classification
+
+### Weak AI (Narrow AI)
+- **Definition**: Designed for specific tasks.
+- **Example**: Chess-playing computers.
+
+### Strong AI (Artificial General Intelligence - AGI)
+- **Definition**: Hypothetical AI with human-like consciousness.
+- **Example**: Not yet achieved, often seen in science fiction.
+
+
+## Data Preprocessing Steps
+
+1. **Getting Dataset**: Obtain the dataset from relevant sources.
+
+2. **Importing Libraries**: Load necessary Python libraries. `pandas` for data manipulation, `sklearn` for preprocessing.
+
+3. **Importing Datasets**: Load dataset into your working environment. Using `pandas.read_csv()` to load a CSV file.
+
+4. **Finding Missing Values**: Identify and handle incomplete data. Using `df.isnull().sum()` to count missing values.
+
+5. **Encoding Categorical Data**: Convert text data to numerical format for machine learning algorithms. Using `sklearn's LabelEncoder` for ordinal data.
+
+6. **Splitting Dataset**: Divide dataset into training and test sets. Using `train_test_split` from `sklearn`.
+
+7. **Feature Scaling**: Normalize numerical features. Using `StandardScaler` from `sklearn`.
+
+
+## Features & Labels
+- **Features**: An independent property of the training data, typically represented by two or more columns used to make predictions in a machine learning model.
+    - `Example`: Housing price predictors: bedrooms, size, location.
+
+- **Labels**: Labels are the output variables or the target that the machine learning model aims to predict. 
+    - `Example`: In a housing price prediction model, the label would be the price of the house.
+
+
+## Supervised Learning
+
+- **Goal**: Predict outcomes for new data based on labeled training data.
+- **Algos**: Decision Trees, Random Forest, SVM
+- **Types**: 
+    - **Classification**: Predict categorical outcomes.
+    - **Regression**: Predict continuous outcomes.
+
+## Unsupervised Learning
+- **Goal**: Find patterns or structures in unlabeled data without any prior training of data.
+- **Algos**: k-Means Clustering, Neural networks
+- **Types**:
+    - **Clustering**: Group similar data points.
+    - **Association**: Discover rules that describe large portions of data. (Buying a laptop + laptop accessories)
