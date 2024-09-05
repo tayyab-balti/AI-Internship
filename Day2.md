@@ -17,6 +17,7 @@ Where:
 
 `Real-life scenario`: Predicting a car's fuel efficiency based on its weight, horsepower, and age.
 
+## Code
 ```python
 # Sample data
 data = {'Weight': [1500, 1600, 1700, 1800, 1900],
