@@ -2,12 +2,12 @@
 
 It is a statistical method used to model the relationship between a dependent variable and one or more independent variables. It assumes a linear relationship between the variables.
 
-`Real-life scenario`: Predicting house prices based on square footage.
+`Real-life scenario:` Predicting house prices based on square footage.
 
 ### Multiple Linear Regression
 Involves multiple independent variables (X₁, X₂, ... Xₙ) and one dependent variable (Y).
 
-`Equation`: Y = m₁X₁ + m₂X₂ + ... + mₙXₙ + c
+`Equation:` Y = m₁X₁ + m₂X₂ + ... + mₙXₙ + c
 
 Where:
 - **Y**: Dependent variable
@@ -15,7 +15,7 @@ Where:
 - **m**: Slope/Coefficient (shows how much `y` changes with one-unit change in `X`)
 - **c**: Y-intercept (value of `y` when `X` is 0)
 
-`Real-life scenario`: Predicting a car's fuel efficiency based on its weight, horsepower, and age.
+`Real-life scenario:` Predicting a car's fuel efficiency based on its weight, horsepower, and age.
 
 ### Code
 ```python
@@ -49,7 +49,7 @@ print(f"Predicted Fuel Efficiency: {predicted_efficiency[0]}")
 ## Polynomial Regression
 Polynomial Regression is a powerful technique for modeling non-linear relationships as an nth degree polynomial. While more complex than linear regression, it offers greater flexibility in capturing real-world phenomena that often exhibit curvilinear patterns.
 
-`Equation`: Y = β₀ + β₁X + β₂X² + ... + βₙXⁿ + ε
+`Equation:` Y = β₀ + β₁X + β₂X² + ... + βₙXⁿ + ε
 
 Where:
 - Y is the dependent variable
@@ -58,7 +58,7 @@ Where:
 - n is the degree of the polynomial
 - ε is the error term
 
-`Real-life scenario`: Modeling the growth of a plant over time, where it grows slowly at first, accelerates, and then slows down, capturing the non-linear growth pattern.
+`Real-life scenario:` Modeling the growth of a plant over time, where it grows slowly at first, accelerates, and then slows down, capturing the non-linear growth pattern.
 
 ### Where to Use
 - The relationship between variables is known to be non-linear
@@ -67,7 +67,7 @@ Where:
 - The data shows clear non-linear trends when plotted
 
 
-## Code
+### Code
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -102,7 +102,7 @@ plt.show()
 ## Logistic Regression
 Logistic regression is used for binary classification where we use sigmoid function, that takes input as independent variables and produces a probability value between 0 and 1.
 
-`Equation`: P(Y=1) = 1 / (1 + e^-(β₀ + β₁X₁ + β₂X₂ + ... + βₙXₙ))
+`Equation:` P(Y=1) = 1 / (1 + e^-(β₀ + β₁X₁ + β₂X₂ + ... + βₙXₙ))
 
 Where:
 - P(Y=1) is the probability of the dependent variable being 1
@@ -115,7 +115,7 @@ Where:
 - Outcome is binary (0 or 1, Yes or No, True or False)
 - Produces a S-shaped curve (logistic curve) instead of a straight line
 
-`Real-life scenario`: A bank uses logistic regression to predict the likelihood of a customer defaulting on payments based on attributes like credit score, income, and credit history. This helps automate the credit card approval process efficiently.
+`Real-life scenario:` A bank uses logistic regression to predict the likelihood of a customer defaulting on payments based on attributes like credit score, income, and credit history. This helps automate the credit card approval process efficiently.
 
 ### Code
 ```python
@@ -168,7 +168,7 @@ A Decision Tree is a supervised learning algorithm used for both classification 
 - **Leaf Node**: Final node that represents the predicted outcome.
 - **Branches**: Connections between nodes representing the decision flow.
 
-`Real-life scenario:` Predicting whether a customer will **churn** based on attributes like usage, customer service calls, and contract duration.
+`Real-life scenario:` Predicting whether a customer will `churn` based on attributes like usage, customer service calls, and contract duration.
 
 ### How It Works
 1. Choose the best feature using metrics like `Gini Index` or `Information Gain`.
@@ -187,6 +187,45 @@ y = [0, 0, 1, 1]
 # Split and train
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 clf = DecisionTreeClassifier()
+clf.fit(X_train, y_train)
+
+# Prediction
+prediction = clf.predict(X_test)
+```
+
+
+## Random Forest
+Random Forest is an ensemble learning method that constructs multiple decision trees during training and outputs the class (for classification) or mean prediction (for regression) of the individual trees, and merges their results for more accurate and stable predictions.
+
+### How It Works
+1. Create multiple datasets using bootstrap sampling
+2. Build a decision tree for each dataset, using a random subset of features at each split
+3. `For classification:` Use majority voting of trees
+4. `For regression:` Take the average prediction of all trees
+
+### Pros
+- Handles large datasets well.
+- Reduces overfitting compared to individual decision trees.
+- Works well with both classification and regression tasks.
+
+### Cons
+- More complex and slower than a single decision tree.
+- Difficult to interpret due to multiple trees.
+
+`Real-life scenario:` Predicting if a loan applicant will `default` based on income, credit score, and employment history.
+
+### Code
+```python
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+
+# Sample data
+X = [[10, 20], [15, 30], [25, 45], [35, 55]]
+y = [0, 0, 1, 1]
+
+# Split and train
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+clf = RandomForestClassifier(n_estimators=100)
 clf.fit(X_train, y_train)
 
 # Prediction
