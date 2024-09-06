@@ -9,6 +9,7 @@ Naive Bayes is a supervised learning algorithm used for solving classification p
 P(A|B) = P(B|A) * P(A) / P(B)
 
 Where:
+- A, B are Events
 - P(A|B) is the posterior probability
 - P(B|A) is the likelihood
 - P(A) is the prior probability
@@ -34,6 +35,54 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 # Initialize and train the model
 model = GaussianNB()
+model.fit(X_train, y_train)
+
+# Prediction
+prediction = model.predict(X_test)
+```
+
+
+## Support Vector Machines (SVM)
+Support Vector Machine (SVM) is a supervised machine learning algorithm used for both classification and regression tasks. It creates a `hyperplane` to separate data points into different classes, with margins to maximize separation.
+
+### Key Concepts
+- **Hyperplane**: A decision boundary that separates the data into classes. In 2D, it's a line; in 3D, it's a plane; in higher dimensions, it's a hyperplane.
+- **Support Vectors**: Data points closest to the hyperplane that influence its position and orientation.
+- **Margin**: The distance between the hyperplane and the nearest data points from either class.
+
+### How it Works
+1. SVM creates two marginal lines parallel to the hyperplane, passing through the nearest data samples of each class.
+2. The algorithm seeks to maximize the distance between these marginal lines.
+3. The goal is to maximize the margin between the classes.
+
+### Types of SVM
+- **Linear SVM**: Used when data can be separated into two classes with a straight line.
+- **Non-linear SVM**: Used when data is not linearly separable. Employs kernel functions to transform the data into a higher-dimensional space.
+
+### Kernel Functions
+- Transform low-dimensional input space into a higher-dimensional space.
+- Convert non-separable problems into separable ones.
+- `Common kernel functions:` Polynomial, Sigmoid kernel, Radial Basis Function (RBF)
+
+### Applications
+- Text and image classification, Face detection, Financial analysis
+
+`Real-life scenario:` Classifying whether an email is **spam or not** based on features such as frequency of words and links.
+
+### Code
+```python
+from sklearn import svm
+from sklearn.model_selection import train_test_split
+
+# Sample data
+X = [[10, 20], [15, 30], [25, 45], [35, 55]]
+y = [0, 0, 1, 1]  # 0 = not spam, 1 = spam
+
+# Split dataset
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+# Initialize and train the SVM model
+model = svm.SVC(kernel='linear')
 model.fit(X_train, y_train)
 
 # Prediction
