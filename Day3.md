@@ -41,7 +41,6 @@ model.fit(X_train, y_train)
 prediction = model.predict(X_test)
 ```
 
-
 ## Support Vector Machines (SVM)
 Support Vector Machine (SVM) is a supervised machine learning algorithm used for both classification and regression tasks. It creates a `hyperplane` to separate data points into different classes, with margins to maximize separation.
 
@@ -88,3 +87,84 @@ model.fit(X_train, y_train)
 # Prediction
 prediction = model.predict(X_test)
 ```
+
+
+## Confusion Matrix
+A Confusion Matrix is an N×N table used for evaluating the performance of a classification model, where N is the number of target classes. It compares actual target values with predicted values, providing insights into the accuracy of the model.
+
+### Structure
+For a binary classification problem, the confusion matrix is a 2×2 table:
+
+|               | Predicted Positive | Predicted Negative |
+|---------------|--------------------|--------------------|
+| Actual Positive | True Positive (TP)  | False Negative (FN) |
+| Actual Negative | False Positive (FP) | True Negative (TN)  |
+
+### Key Components
+- **TP (True Positive)**: Actual positive and predicted as positive.
+- **TN (True Negative)**: Actual negative and predicted as negative.
+- **FP (False Positive)**: Actual negative but predicted as positive `(Type I Error)`.
+- **FN (False Negative)**: Actual positive but predicted as negative `(Type II Error)`.
+
+### Performance Metrics
+- **Accuracy**: Number of predictions the model got right.
+  `Formula: (TP + TN) / (TP + TN + FP + FN)`
+
+- **Error Rate**: Number of predictions the model got wrong.
+  `Formula: (FP + FN) / (TP + TN + FP + FN)` or `1 - accuracy`
+
+- **Precision**: When the model predicts positives, how often is it right?
+  `Formula: (TP / (TP + FP))`
+
+- **Recall**: When it's actually yes, how often does the model predict yes?
+  `Formula: (TP / (TP + FN))`
+
+### Applications
+- **Medical Diagnosis**: Evaluating the performance of diagnostic tests.
+- **Fraud Detection**: Assessing the accuracy of fraud detection systems.
+
+`Real-life scenario:` A hospital uses an AI model to predict disease presence based on patient symptoms. The Confusion Matrix shows correct diagnoses, false alarms, and missed cases, helping doctors assess the model's reliability for clinical use.
+
+
+## Overfitting and Underfitting
+
+Model performance is evaluated based on two factors:
+- **Accuracy**: Measures how well a model predicts the correct output.
+- **Generalization**: Assesses how well a model performs on new, unseen data.
+
+### Underfitting
+Underfitting occurs when a model has low accuracy on both training and test data.
+
+### Causes
+- Insufficient data
+- Overly simplistic model (e.g., linear model for nonlinear data)
+- Inadequate feature selection
+
+### Underfitting Solutions
+- Increase model complexity
+- Feature engineering
+- Gather more relevant data
+
+### Overfitting
+Overfitting happens when a model has high accuracy on training data but low accuracy on test data.
+
+### Causes
+- Overly complex model
+- Training on noise or outliers
+- Insufficient regularization
+
+### Right Fit (Good Fit)
+A model is considered to have a good fit when it makes predictions with minimal error and generalizes well to new data.
+
+### Characteristics
+- Balance between bias and variance
+- Good performance on training data
+- Good generalization to test data
+
+### Overfitting Solutions
+- Regularization techniques (L1, L2)
+- Cross-validation
+- Ensemble methods
+- Early stopping in iterative algorithms
+
+`Real-life scenario:` A weather prediction model undergoes fitting analysis. An underfit model might always predict "sunny," while an overfit model remembers specific dates instead of weather patterns. A well-fit model balances historical patterns with adaptability to new conditions.
