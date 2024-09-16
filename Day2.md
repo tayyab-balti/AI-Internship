@@ -66,7 +66,6 @@ Where:
 - You need to model curved relationships
 - The data shows clear non-linear trends when plotted
 
-
 ### Code
 ```python
 import numpy as np
@@ -157,6 +156,31 @@ new_customer = [[690, 50000, 5]]  # Credit score, Annual Income, Years of Credit
 prediction = model.predict(new_customer)
 print(f"Credit card approval prediction: {'Approved' if prediction[0] == 1 else 'Rejected'}")
 ```
+
+
+## K Nearest Neighbors (KNN)
+KNN is a simple, non-parametric algorithm used for classification and regression tasks. It predicts the class or value of a data point by looking at the 'K' nearest data points and using majority voting (for classification) or averaging (for regression).
+
+### Key Steps
+
+1. **Calculate Euclidean Distance**: √((x2 - x1)² + (y2 - y1)²)
+2. **Select K Nearest Neighbors**:
+   The 'K' closest points based on distance (e.g., K=3).
+3. **Majority Voting**:
+   For K ≥ 3, the class is decided by majority voting or averaging (for regression).
+
+### Visualization
+
+
+## Applications
+- **Classification**:
+  Predicts categories (e.g., whether a user will like a movie).
+- **Regression**:
+  Predicts continuous values (e.g., estimating a user’s rating for a movie).
+
+## Key Points
+- Works for both classification and regression.
+- Sensitive to the choice of K and the scale of the data.
 
 
 ## Decision Trees
