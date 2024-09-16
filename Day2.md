@@ -15,6 +15,9 @@ Where:
 - **m**: Slope/Coefficient (shows how much `y` changes with one-unit change in `X`)
 - **c**: Y-intercept (value of `y` when `X` is 0)
 
+### Visualization
+![Linear Regression Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/decision-tree-entropy-visualization.svg)
+
 `Real-life scenario:` Predicting a car's fuel efficiency based on its weight, horsepower, and age.
 
 ### Code
