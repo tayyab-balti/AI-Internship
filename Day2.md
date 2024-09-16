@@ -161,10 +161,15 @@ $$
 Random Forest is an ensemble learning method that constructs multiple decision trees during training and outputs the class (for classification) or mean prediction (for regression) of the individual trees, and merges their results for more accurate and stable predictions.
 
 ### How It Works
-1. Create multiple datasets using bootstrap sampling
+1. Create bootstrap dataset from original data by randomly choosing data (repetition is allowed).
 2. Build a decision tree for each dataset, using a random subset of features at each split
 3. `For classification:` Use majority voting of trees
 4. `For regression:` Take the average prediction of all trees
+
+`Real-life scenario:` Predicting if a loan applicant will `default` based on income, credit score, and employment history.
+
+### Visualization 
+![Decision Trees Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/decision-tree-entropy-visualization.svg)
 
 ### Pros
 - Handles large datasets well.
@@ -175,4 +180,3 @@ Random Forest is an ensemble learning method that constructs multiple decision t
 - More complex and slower than a single decision tree.
 - Difficult to interpret due to multiple trees.
 
-`Real-life scenario:` Predicting if a loan applicant will `default` based on income, credit score, and employment history.
