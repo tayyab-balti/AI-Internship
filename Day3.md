@@ -22,11 +22,8 @@ Where:
 `Real-life scenario:` Predicting spam emails based on features like keywords (free, discounts), sender address, and message length. It calculates the probability of an email being spam based on these features.
 
 ### Visualization
-```html
-<svg xmlns="naive-bayes-flowchart-svg.svg" viewBox="0 0 400 300">
-  <!-- SVG content here -->
-</svg>
-```
+![Naive Bayes Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/masters/Images/naive-bayes_flowchart.svg)
+
 ### Code
 ```python
 from sklearn.naive_bayes import GaussianNB
