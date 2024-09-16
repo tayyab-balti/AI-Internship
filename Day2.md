@@ -66,37 +66,6 @@ Where:
 - You need to model curved relationships
 - The data shows clear non-linear trends when plotted
 
-### Code
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
-from sklearn.preprocessing import PolynomialFeatures
-
-# Sample data
-X = np.array([1, 2, 3, 4, 5]).reshape(-1, 1)
-y = np.array([1, 4, 9, 16, 25])
-
-# Transform the features to polynomial (degree 2)
-poly = PolynomialFeatures(degree=2)
-X_poly = poly.fit_transform(X)
-
-# Fit the polynomial regression model
-model = LinearRegression()
-model.fit(X_poly, y)
-
-# Predict using the polynomial model
-y_pred = model.predict(X_poly)
-
-# Plot the results
-plt.scatter(X, y, color='blue')  # Original data points
-plt.plot(X, y_pred, color='red')  # Fitted polynomial curve
-plt.title('Polynomial Regression (degree 2)')
-plt.xlabel('X')
-plt.ylabel('y')
-plt.show()
-```
-
 
 ## Logistic Regression
 Logistic regression is used for binary classification where we use sigmoid function, that takes input as independent variables and produces a probability value between 0 and 1.
@@ -115,47 +84,6 @@ Where:
 - Produces a S-shaped curve (logistic curve) instead of a straight line
 
 `Real-life scenario:` A bank uses logistic regression to predict the likelihood of a customer defaulting on payments based on attributes like credit score, income, and credit history. This helps automate the credit card approval process efficiently.
-
-### Code
-```python
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score
-
-# Larger dataset
-data = {
-    'Credit_Score': [650, 700, 620, 720, 630, 710, 680, 640, 750, 690],
-    'Annual_Income': [40000, 60000, 35000, 80000, 45000, 75000, 55000, 38000, 90000, 50000],
-    'Years_Credit_History': [3, 8, 2, 10, 4, 9, 7, 2, 12, 6],
-    'Approval': [0, 1, 0, 1, 0, 1, 1, 0, 1, 1]  # 1 = Approved, 0 = Rejected
-}
-
-df = pd.DataFrame(data)
-
-# Independent variables (features) and dependent variable (target)
-X = df[['Credit_Score', 'Annual_Income', 'Years_Credit_History']]
-y = df['Approval']
-
-# Split the data into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
-
-# Initialize and train the Logistic Regression model
-model = LogisticRegression()
-model.fit(X_train, y_train)
-
-# Make predictions
-y_pred = model.predict(X_test)
-
-# Evaluate the model's performance
-accuracy = accuracy_score(y_test, y_pred)
-print(f"Accuracy: {accuracy * 100:.2f}%")
-
-# Predicting approval for a new customer
-new_customer = [[690, 50000, 5]]  # Credit score, Annual Income, Years of Credit History
-prediction = model.predict(new_customer)
-print(f"Credit card approval prediction: {'Approved' if prediction[0] == 1 else 'Rejected'}")
-```
 
 
 ## K Nearest Neighbors (KNN)
@@ -248,21 +176,3 @@ Random Forest is an ensemble learning method that constructs multiple decision t
 - Difficult to interpret due to multiple trees.
 
 `Real-life scenario:` Predicting if a loan applicant will `default` based on income, credit score, and employment history.
-
-### Code
-```python
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
-
-# Sample data
-X = [[10, 20], [15, 30], [25, 45], [35, 55]]
-y = [0, 0, 1, 1]
-
-# Split and train
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
-clf = RandomForestClassifier(n_estimators=100)
-clf.fit(X_train, y_train)
-
-# Prediction
-prediction = clf.predict(X_test)
-```
