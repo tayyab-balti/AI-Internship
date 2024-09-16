@@ -199,8 +199,8 @@ A Decision Tree is a supervised learning algorithm used for both classification 
 - **Gini Impurity:** Alternative to entropy (for CART algorithm)
 - **Pruning:** Process of removing unnecessary branches to prevent overfitting
 
-### Visualization
-![Decision Trees Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/knn-visualization.svg)
+### Visualization 
+![Decision Trees Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/decision-tree-entropy-visualization.svg)
 
 ### Building Process Steps:
 1) Calculate entropy (H) of entire dataset
