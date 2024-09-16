@@ -172,13 +172,13 @@ KNN is a simple, non-parametric algorithm used for classification and regression
 ### Visualization
 ![KNN Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/knn-visualization.svg)
 
-## Applications
+### Applications
 - **Classification**:
   Predicts categories (e.g., whether a user will like a movie).
 - **Regression**:
   Predicts continuous values (e.g., estimating a user’s rating for a movie).
 
-## Key Points
+### Key Points
 - Works for both classification and regression.
 - Sensitive to the choice of K and the scale of the data.
 
@@ -187,35 +187,42 @@ KNN is a simple, non-parametric algorithm used for classification and regression
 A Decision Tree is a supervised learning algorithm used for both classification and regression tasks. It splits the data into subsets based on the most significant feature.
 
 ### Components
-- **Root Node**: Top node, represents entire dataset.
-- **Decision Node**: Intermediate nodes that splits based on a feature.
-- **Leaf Node**: Final node that represents the predicted outcome.
+- **Root Node**: Top decision node, represents entire dataset.
+- **Internal Nodes**: Decision nodes that splits based on a feature.
+- **Leaf Nodes**: Final node that represents the predicted outcome.
 - **Branches**: Connections between nodes representing the decision flow.
 
+### Key Concepts:
+- **Splitting:** Process of dividing a node into sub-nodes
+- **Entropy:** Measure of impurity/disorder in the data
+- **Information Gain:** Reduction in entropy after a split
+- **Gini Impurity:** Alternative to entropy (for CART algorithm)
+- **Pruning:** Process of removing unnecessary branches to prevent overfitting
+
+### Visualization
+![Decision Trees Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/knn-visualization.svg)
+
+### Building Process Steps:
+1) Calculate entropy (H) of entire dataset
+2) Calculate entropy for each attribute
+3) Calculate Information Gain for each split
+4) Choose attribute with highest Information Gain
+- Repeat steps 2-4 for each branch until stopping criteria met
+
+### Formulas
+$$
+Entropy H(S) = -\sum_{i=1}^{c} p_i \log_2(p_i)
+$$
+
+$$
+H(S, A) = -\sum_{j=1}^{n} \frac{|S_j|}{|S|} H(S_j)
+$$
+
+$$
+IG(S, A) = H(S) - H(S, A)
+$$
+
 `Real-life scenario:` Predicting whether a customer will `churn` based on attributes like usage, customer service calls, and contract duration.
-
-### How It Works
-1. Choose the best feature using metrics like `Gini Index` or `Information Gain`.
-2. Split the dataset into subsets.
-3. Repeat the process until a stopping criterion is met (e.g., all leaves are pure).
-
-### Code
-```python
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import train_test_split
-
-# Sample data
-X = [[10, 20], [15, 30], [25, 45], [35, 55]]
-y = [0, 0, 1, 1]
-
-# Split and train
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
-clf = DecisionTreeClassifier()
-clf.fit(X_train, y_train)
-
-# Prediction
-prediction = clf.predict(X_test)
-```
 
 
 ## Random Forest
