@@ -204,23 +204,27 @@ A Decision Tree is a supervised learning algorithm used for both classification 
 
 ### Building Process Steps:
 1) Calculate entropy (H) of entire dataset
+
+$$
+H(S) = S{+9, -5} = - \frac{9}{14} \log_2 \left(\frac{9}{14}\right) - \frac{5}{14} \log_2 \left(\frac{5}{14}\right)
+$$
+- Here +9 = total yes in the dataset, -5 = total no, 14 = total_dataset_rows
+
 2) Calculate entropy for each attribute
+
+$$
+H(Sunny) = - \frac{2}{5} \log_2 \left(\frac{2}{5}\right) - \frac{3}{5} \log_2 \left(\frac{3}{5}\right)
+H(Rainy) = - \frac{3}{5} \log_2 \left(\frac{3}{5}\right) - \frac{2}{5} \log_2 \left(\frac{2}{5}\right)
+$$
+
 3) Calculate Information Gain for each split
+
+$$
+IG(S) = H(S) - \left( \frac{5}{14} H(Sunny) \right) - \left( \frac{5}{14} H(Rainy) \right)
+$$
+
 4) Choose attribute with highest Information Gain
 - Repeat steps 2-4 for each branch until stopping criteria met
-
-### Formulas
-$$
-Entropy H(S) = -\sum_{i=1}^{c} p_i \log_2(p_i)
-$$
-
-$$
-H(S, A) = -\sum_{j=1}^{n} \frac{|S_j|}{|S|} H(S_j)
-$$
-
-$$
-IG(S, A) = H(S) - H(S, A)
-$$
 
 `Real-life scenario:` Predicting whether a customer will `churn` based on attributes like usage, customer service calls, and contract duration.
 
