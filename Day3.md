@@ -21,6 +21,47 @@ Where:
 
 `Real-life scenario:` Predicting spam emails based on features like keywords (free, discounts), sender address, and message length. It calculates the probability of an email being spam based on these features.
 
+### Visualization
+```python
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  
+  <!-- Email -->
+  <rect x="10" y="10" width="380" height="40" rx="5" fill="#d4e6f1"/>
+  <text x="20" y="35" font-size="14">New Email: "Urgent: You won money, friend!"</text>
+  
+  <!-- Arrow -->
+  <line x1="200" y1="50" x2="200" y2="80" stroke="black" stroke-width="2"/>
+  <polygon points="195,75 200,85 205,75" fill="black"/>
+  
+  <!-- Word Splitting -->
+  <rect x="50" y="85" width="300" height="30" rx="5" fill="#d5f5e3"/>
+  <text x="60" y="105" font-size="14">Split into words: urgent, won, money, friend</text>
+  
+  <!-- Arrow -->
+  <line x1="200" y1="115" x2="200" y2="145" stroke="black" stroke-width="2"/>
+  <polygon points="195,140 200,150 205,140" fill="black"/>
+  
+  <!-- Probability Calculation -->
+  <rect x="20" y="150" width="170" height="40" rx="5" fill="#fad7a0"/>
+  <text x="30" y="175" font-size="12">Calculate P(word|Spam)</text>
+  
+  <rect x="210" y="150" width="170" height="40" rx="5" fill="#fad7a0"/>
+  <text x="220" y="175" font-size="12">Calculate P(word|Not Spam)</text>
+  
+  <!-- Arrows -->
+  <line x1="105" y1="190" x2="105" y2="220" stroke="black" stroke-width="2"/>
+  <polygon points="100,215 105,225 110,215" fill="black"/>
+  
+  <line x1="295" y1="190" x2="295" y2="220" stroke="black" stroke-width="2"/>
+  <polygon points="290,215 295,225 300,215" fill="black"/>
+  
+  <!-- Final Decision -->
+  <rect x="50" y="225" width="300" height="40" rx="5" fill="#fadbd8"/>
+  <text x="60" y="250" font-size="14">Compare probabilities and classify</text>
+</svg>
+```
+
 ### Code
 ```python
 from sklearn.naive_bayes import GaussianNB
