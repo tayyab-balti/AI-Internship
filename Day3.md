@@ -24,25 +24,6 @@ Where:
 ### Visualization
 ![Naive Bayes Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/naive-bayes-flowchart-svg.svg)
 
-### Code
-```python
-from sklearn.naive_bayes import GaussianNB
-from sklearn.model_selection import train_test_split
-
-# Sample data
-X = [[10, 20], [15, 30], [25, 45], [35, 55]]  # Features
-y = [0, 0, 1, 1]  # Labels (0 = not spam, 1 = spam)
-
-# Split the dataset
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
-
-# Initialize and train the model
-model = GaussianNB()
-model.fit(X_train, y_train)
-
-# Prediction
-prediction = model.predict(X_test)
-```
 
 ## Support Vector Machines (SVM)
 Support Vector Machine (SVM) is a supervised machine learning algorithm used for both classification and regression tasks. It creates a `hyperplane` to separate data points into different classes, with margins to maximize separation.
@@ -71,25 +52,8 @@ Support Vector Machine (SVM) is a supervised machine learning algorithm used for
 
 `Real-life scenario:` Classifying whether an email is **spam or not** based on features such as frequency of words and links.
 
-### Code
-```python
-from sklearn import svm
-from sklearn.model_selection import train_test_split
-
-# Sample data
-X = [[10, 20], [15, 30], [25, 45], [35, 55]]
-y = [0, 0, 1, 1]  # 0 = not spam, 1 = spam
-
-# Split dataset
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
-
-# Initialize and train the SVM model
-model = svm.SVC(kernel='linear')
-model.fit(X_train, y_train)
-
-# Prediction
-prediction = model.predict(X_test)
-```
+### Visualization
+![Naive Bayes Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/svm-email-classification.svg)
 
 
 ## Confusion Matrix
