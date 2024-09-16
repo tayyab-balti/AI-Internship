@@ -61,6 +61,9 @@ Where:
 - n is the degree of the polynomial
 - ε is the error term
 
+### Visualization
+![Polynomial Regression Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/polynomial-regression.svg)
+
 `Real-life scenario:` Modeling the growth of a plant over time, where it grows slowly at first, accelerates, and then slows down, capturing the non-linear growth pattern.
 
 ### Where to Use
@@ -80,6 +83,9 @@ Where:
 - e is the base of natural logarithms
 - β₀, β₁, ..., βₙ are the regression coefficients
 - X₁, X₂, ..., Xₙ are the independent variables
+
+### Visualization
+![Logistic Regression Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/logistic-regression.svg)
 
 ### Key Characteristics
 - Used for classification problems
