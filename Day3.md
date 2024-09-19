@@ -15,6 +15,23 @@ Where:
 - P(A) is the prior probability
 - P(B) is the marginal likelihood
 
+### Steps:
+1) Prior Probability:
+    - P(fever=yes) = 7/10
+    - P(fever=no) = 3/10
+
+2) Conditional Probability:
+```
+|       | Yes  | No  |
+|--------------|-----|
+| Covid | 4/7  | 2/3 |
+| Flu   | 3/7  | 2/3 |
+```
+
+`Example:` Here yes & no refers to Fever:
+- P(yes|flu,Covid) = P(flu/yes) * P(covid/yes) * P(yes)
+- P(No|flu,Covid) = P(flu/No) * P(covid/No) * P(No)
+
 ### Applications
 - Text classification (spam detection, sentiment analysis)
 - Face recognition, Weather forecasting, News categorization
