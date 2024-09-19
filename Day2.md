@@ -164,7 +164,7 @@ $$
 4) Choose attribute with highest Information Gain and it will be Root_Node
 - Repeat steps 2-4 for each branch until stopping criteria met
 
-`Real-life scenario:` Predicting whether a customer will `churn` based on attributes like usage, customer service calls, and contract duration.
+`Real-life scenario:` Predicting whether students can `play football` based on attributes like weather, temperature, humidity, wind.
 
 
 ## Random Forest
@@ -179,7 +179,7 @@ Random Forest is an ensemble learning method that constructs multiple decision t
 `Real-life scenario:` Predicting if a loan applicant will `default` based on income, credit score, and employment history.
 
 ### Visualization 
-![Decision Trees Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/random-forest-loan-default.svg)
+![Decision Trees Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/Random-Forest-Algorithm.webp)
 
 ### Pros
 - Handles large datasets well.
