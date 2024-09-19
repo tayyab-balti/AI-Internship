@@ -100,7 +100,7 @@ For a binary classification problem, the confusion matrix is a 2×2 table:
 - **Precision**: When the model predicts positives, how often is it right?
   `Formula: (TP / (TP + FP))`
 
-- **Recall**: When it's actually yes, how often does the model predict yes?
+- **Recall**: When it's actually yes (+ve), how often does the model predict yes?
   `Formula: (TP / (TP + FN))`
 
 ### Applications
@@ -108,6 +108,38 @@ For a binary classification problem, the confusion matrix is a 2×2 table:
 - **Fraud Detection**: Assessing the accuracy of fraud detection systems.
 
 `Real-life scenario:` A hospital uses an AI model to predict disease presence based on patient symptoms. The Confusion Matrix shows correct diagnoses, false alarms, and missed cases, helping doctors assess the model's reliability for clinical use.
+
+### Multi-Class Confusion Matrix
+
+| Actual \ Predicted | A | B | C |
+|--------------------|---|---|---|
+| A                  | 5 | 1 | 0 |
+| B                  | 2 | 3 | 1 |
+| C                  | 0 | 1 | 4 |
+
+### Binary Classification Conversion
+
+**Positive (A) & Negative (B & C)**
+Converting class A to positive, B and C to negative:
+
+| Actual \ Predicted | Positive (A) | Negative (B & C) |
+|--------------------|--------------|------------------|
+| Positive (A)       | 5 (TP)       | 1 (FN)           |
+| Negative (B & C)   | 2 (FP)       | 9 (TN)           |
+
+**Positive (B) & Negative (A & C)**
+
+| Actual \ Predicted | Positive (B) | Negative (A & C) |
+|--------------------|--------------|------------------|
+| Positive (B)       | 3 (TP)       | 3 (FN)           |
+| Negative (A & C)   | 2 (FP)       | 9 (TN)           |
+
+**Positive (C) & Negative (A & B)**
+
+| Actual \ Predicted | Positive (C) | Negative (A & B) |
+|--------------------|--------------|------------------|
+| Positive (C)       | 4 (TP)       | 1 (FN)           |
+| Negative (A & B)   | 1 (FP)       | 11 (TN)          |
 
 
 ## Overfitting and Underfitting
