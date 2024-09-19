@@ -143,7 +143,7 @@ A Decision Tree is a supervised learning algorithm used for both classification 
 1) Calculate entropy (H) of entire dataset
 
 $$
-H(S) = S{+9, -5} = - \frac{9}{14} \log_2 \left(\frac{9}{14}\right) - \frac{5}{14} \log_2 \left(\frac{5}{14}\right)
+H(S) = S\[+9, -5\] = - \frac{9}{14} \log_2 \left(\frac{9}{14}\right) - \frac{5}{14} \log_2 \left(\frac{5}{14}\right)
 $$
 - Here +9 = total yes in the dataset, -5 = total no, 14 = total_dataset_rows
 
