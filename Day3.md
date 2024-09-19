@@ -74,7 +74,7 @@ Support Vector Machine (SVM) is a supervised machine learning algorithm used for
 
 
 ## Confusion Matrix
-A Confusion Matrix is an N×N table used for evaluating the performance of a classification model, where N is the number of target classes. It compares actual target values with predicted values, providing insights into the accuracy of the model.
+A Confusion Matrix is an N×N table used to evaluate the performance of a classification model, where N is the number of target classes. It compares actual target values with predicted values, providing insights into the model's accuracy.
 
 ### Structure
 For a binary classification problem, the confusion matrix is a 2×2 table:
