@@ -150,7 +150,7 @@ $$
 2) Calculate entropy for each attribute
 
 $$
-H(Sunny) = - \frac{2}{5} \log_2 \left(\frac{2}{5}\right) - \frac{3}{5} \log_2 \left(\frac{3}{5}\right)
+H(Sunny) = - \frac{2}{5} \log_2 \left(\frac{2}{5}\right) - \frac{3}{5} \log_2 \left(\frac{3}{5}\right),
 H(Rainy) = - \frac{3}{5} \log_2 \left(\frac{3}{5}\right) - \frac{2}{5} \log_2 \left(\frac{2}{5}\right)
 $$
 
