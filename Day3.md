@@ -91,17 +91,19 @@ For a binary classification problem, the confusion matrix is a 2×2 table:
 - **FN (False Negative)**: Actual positive but predicted as negative `(Type II Error)`.
 
 ### Performance Metrics
-- **Accuracy**: Number of predictions the model got right.
+- **Accuracy:** Number of predictions the model got right.
   `Formula: (TP + TN) / (TP + TN + FP + FN)`
 
-- **Error Rate**: Number of predictions the model got wrong.
+- **Error Rate:** Number of predictions the model got wrong.
   `Formula: (FP + FN) / (TP + TN + FP + FN)` or `1 - accuracy`
 
-- **Precision**: When the model predicts positives, how often is it right?
+- **Precision:** When the model predicts positives, how often is it right?
   `Formula: (TP / (TP + FP))`
 
-- **Recall**: When it's actually yes (+ve), how often does the model predict yes?
+- **Recall:** When it's actually yes (+ve), how often does the model predict yes?
   `Formula: (TP / (TP + FN))`
+- **F1 score:** calculates the harmonic mean of precision and recall, providing a balanced measure of a model's accuracy that considers both false positives and false negatives.
+  `Formula: 2 * (Precision * Recall) / (Precision + Recall)`
 
 ### Applications
 - **Medical Diagnosis**: Evaluating the performance of diagnostic tests.
