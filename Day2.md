@@ -15,6 +15,20 @@ Where:
 - **m**: Slope/Coefficient (shows how much `y` changes with one-unit change in `X`)
 - **c**: Y-intercept (value of `y` when `X` is 0)
 
+**Squared Error Cost function**
+- It measures the difference bw model's prediction and actual true y values used for linear regression is:
+
+$$
+J(w, b) = \frac{1}{2m} \sum_{i=1}^{m} \left( f_{w,b}(x^{(i)}) - y^{(i)} \right)^2
+$$
+
+Where:
+- model: f{w,b}(x) = wx + b
+- w, b: parameter/coefficients/weights
+- m: total no of training examples (rows)
+- i: iterations of x with respect to y
+- Objective: minimizes J(w,b)
+  
 ### Visualization
 ![Linear Regression Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/house-price-size-regression.svg)
 
