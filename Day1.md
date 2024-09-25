@@ -138,8 +138,8 @@ Machine Learning (ML) is a subset of artificial intelligence that focuses on the
 - **Goal**: Predict outcomes for new data based on labeled training data.
 - **Algos**: Decision Trees, Random Forest, SVM
 - **Types**: 
-    - **Classification**: Predict categorical outcomes.
-    - **Regression**: Predict continuous outcomes.
+    - **Classification**: Predict categories (classes) & small no of possible outputs.
+    - **Regression**: Predict continuous outcomes (numbers) & infinitely many possible outputs.
 
 ## Unsupervised Learning
 - **Goal**: Find patterns or structures in unlabeled data without any prior training of data.
