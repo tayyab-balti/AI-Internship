@@ -7,16 +7,16 @@ It is a statistical method used to model the relationship between a dependent va
 ### Multiple Linear Regression
 Involves multiple independent variables (X₁, X₂, ... Xₙ) and one dependent variable (Y).
 
-`Equation:` Y = m₁X₁ + m₂X₂ + ... + mₙXₙ + c
+`Equation:` Y = m₁X₁ + m₂X₂ + ... + mₙXₙ + b
 
 Where:
 - **Y**: Dependent variable
 - **X**: Independent variable
 - **m**: Slope/Coefficient (shows how much `y` changes with one-unit change in `X`)
-- **c**: Y-intercept (value of `y` when `X` is 0)
+- **b**: Y-intercept (value of `y` when `X` is 0)
 
-**Squared Error Cost function**
-- It measures the difference bw model's prediction and actual true y values used for linear regression is:
+**Squared-Error Cost function**
+- It measures the difference bw model's prediction and actual true y values used for linear regression and written as:
 
 $$
 J(w, b) = \frac{1}{2m} \sum_{i=1}^{m} \left( f_{w,b}(x^{(i)}) - y^{(i)} \right)^2
@@ -28,7 +28,14 @@ Where:
 - m: total no of training examples (rows)
 - i: iterations of x with respect to y
 - Objective: minimizes J(w,b)
-  
+
+**Gradient Descent**
+- Gradient descent is an optimization algorithm which is commonly-used to train machine learning models and neural networks by minimizing errors between predicted and actual results. It is used for finding values of parameters w and b that minimize the cost function J.
+
+$$
+w = w - \alpha \frac{\partial J(w, b)}{\partial w}
+$$
+
 ### Visualization
 ![Linear Regression Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/house-price-size-regression.svg)
 
