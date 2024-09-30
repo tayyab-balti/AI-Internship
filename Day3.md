@@ -186,7 +186,8 @@ A model is considered to have a good fit when it makes predictions with minimal 
 - Good generalization to test data
 
 ### Overfitting Solutions
-- Regularization techniques (L1, L2)
+- Feature Selection
+- Regularization (reduce size of parameters) techniques (L1, L2)
 - Cross-validation
 - Ensemble methods
 - Early stopping in iterative algorithms
