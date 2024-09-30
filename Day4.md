@@ -1,3 +1,6 @@
+## Feature Engineering
+- Using intuition to design new features, by transforming or combining original features.
+
 ## Ensemble Learning
 - It uses multiple learning algorithms to obtain better predictive performance.
 - Giving dataset to multiple models (KNN, SVM, Logistic Regression, etc.)
