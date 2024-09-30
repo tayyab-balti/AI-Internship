@@ -150,6 +150,9 @@ Model performance is evaluated based on two factors:
 - **Accuracy**: Measures how well a model predicts the correct output.
 - **Generalization**: Assesses how well a model performs on new, unseen data.
 
+### Visualization
+![Over and Underfitting](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/Under_Over_fitting.png)
+
 ### Underfitting
 Underfitting occurs when a model has low accuracy on both training and test data.
 
