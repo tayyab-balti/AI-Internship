@@ -15,6 +15,12 @@ Where:
 - **m**: Slope/Coefficient (shows how much `y` changes with one-unit change in `X`)
 - **b**: Y-intercept (value of `y` when `X` is 0)
 
+```
+- In ML, we write the equation for a linear regression model as follows:
+![ML Linear Regression Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/ml_linear_equation.png.svg)
+```
+
+
 **Squared-Error Cost function**
 - It measures the difference bw model's prediction and actual true y values used for linear regression and written as:
 
