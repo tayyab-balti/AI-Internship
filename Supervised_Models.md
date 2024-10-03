@@ -216,3 +216,77 @@ Random Forest is an ensemble learning method that constructs multiple decision t
 - More complex and slower than a single decision tree.
 - Difficult to interpret due to multiple trees.
 
+
+## Naive Bayes Classification
+Naive Bayes is a supervised learning algorithm used for solving classification problems. It is a probabilistic classifier that predicts based on the probability of an object belonging to a particular class.
+
+### Key Concepts
+- **Naive**: Assumes that all attributes (features) are independent of each other (which may not always be true in practice).
+- **Bayes**: Based on `Bayes' Theorem`, which calculates the conditional probability of an event.
+
+### Bayes' Theorem
+P(A|B) = P(B|A) * P(A) / P(B)
+
+Where:
+- A, B are Events
+- P(A|B) is the posterior probability
+- P(B|A) is the likelihood
+- P(A) is the prior probability
+- P(B) is the marginal likelihood
+
+### Steps:
+1) Prior Probability:
+    - P(fever=yes) = 7/10
+    - P(fever=no) = 3/10
+
+2) Conditional Probability:
+```
+|       | Yes  | No  |
+|--------------|-----|
+| Covid | 4/7  | 2/3 |
+| Flu   | 3/7  | 2/3 |
+```
+
+`Example:` Here yes & no refers to Fever:
+- P(yes|flu,Covid) = P(flu/yes) * P(covid/yes) * P(yes)
+- P(No|flu,Covid) = P(flu/No) * P(covid/No) * P(No)
+
+### Applications
+- Text classification (spam detection, sentiment analysis)
+- Face recognition, Weather forecasting, News categorization
+
+`Real-life scenario:` Predicting spam emails based on features like keywords (free, discounts), sender address, and message length. It calculates the probability of an email being spam based on these features.
+
+### Visualization
+![Naive Bayes Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/naive-bayes-flowchart-svg.svg)
+
+
+## Support Vector Machines (SVM)
+Support Vector Machine (SVM) is a supervised machine learning algorithm used for both classification and regression tasks. It creates a `hyperplane` to separate data points into different classes, with margins to maximize separation.
+
+### Key Concepts
+- **Hyperplane**: A decision boundary that separates the data into classes. In 2D, it's a line; in 3D, it's a plane; in higher dimensions, it's a hyperplane.
+- **Support Vectors**: Data points closest to the hyperplane that influence its position and orientation.
+- **Margin**: The distance between the hyperplane and the nearest data points from either class.
+
+### How it Works
+1. SVM creates two marginal lines parallel to the hyperplane, passing through the nearest data samples of each class.
+2. The algorithm seeks to maximize the distance between these marginal lines.
+3. The goal is to maximize the margin between the classes.
+
+### Types of SVM
+- **Linear SVM**: Used when data can be separated into two classes with a straight line.
+- **Non-linear SVM**: Used when data is not linearly separable. Employs kernel functions to transform the data into a higher-dimensional space.
+
+### Kernel Functions
+- Transform low-dimensional input space into a higher-dimensional space.
+- Convert non-separable problems into separable ones.
+- `Common kernel functions:` Polynomial, Sigmoid kernel, Radial Basis Function (RBF)
+
+### Applications
+- Text and image classification, Face detection, Financial analysis
+
+`Real-life scenario:` Classifying whether an email is **spam or not** based on features such as frequency of words and links.
+
+### Visualization
+![Naive Bayes Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/svm-email-classification.png)
