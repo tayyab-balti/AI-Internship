@@ -3,7 +3,7 @@
 # Table of Contents
 
 1. [Overview](#overview)
-2. [How It Works](#how-it-works)
+2. [How It Works](1.%20##How-it-Works)
 3. [Characteristics of Machine Learning](#characteristics-of-machine-learning)
 4. [Pros of Machine Learning](1.%20#pros-of-machine-learning)
 5. [Cons of Machine Learning](1.%20#cons-of-machine-learning)
