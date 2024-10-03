@@ -42,7 +42,7 @@ w = w - \alpha \frac{\partial J(w, b)}{\partial w}
 $$
 
 ### Visualization
-![Linear Regression Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/house-price-size-regression.svg)
+![Linear Regression Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/multiple-linear-regression.png)
 
 `Real-life scenario:` Predicting a car's fuel efficiency based on its weight, horsepower, and age.
 
@@ -88,7 +88,7 @@ Where:
 - ε is the error term
 
 ### Visualization
-![Polynomial Regression Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/polynomial-regression.svg)
+![Polynomial Regression Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/polynomial-regression.png)
 
 `Real-life scenario:` Modeling the growth of a plant over time, where it grows slowly at first, accelerates, and then slows down, capturing the non-linear growth pattern.
 
@@ -111,7 +111,7 @@ Where:
 - X₁, X₂, ..., Xₙ are the independent variables
 
 ### Visualization
-![Logistic Regression Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/logistic-regression.svg)
+![Logistic Regression Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/logistic-regression.png)
 
 ### Key Characteristics
 - Used for classification problems
