@@ -70,7 +70,7 @@ Support Vector Machine (SVM) is a supervised machine learning algorithm used for
 `Real-life scenario:` Classifying whether an email is **spam or not** based on features such as frequency of words and links.
 
 ### Visualization
-![Naive Bayes Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/svm-email-classification.svg)
+![Naive Bayes Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/svm-email-classification.png)
 
 
 ## Confusion Matrix
