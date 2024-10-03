@@ -133,7 +133,7 @@ KNN is a simple, non-parametric algorithm used for classification and regression
    For K ≥ 3, the class is decided by majority voting or averaging (for regression).
 
 ### Visualization
-![KNN Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/knn-visualization.svg)
+![KNN Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/knn-visualization.png)
 
 ### Applications
 - **Classification**:
