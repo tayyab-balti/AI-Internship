@@ -2,18 +2,18 @@
 
 # Table of Contents
 
-1. [Overview](#overview)
-2. [How It Works](1.%20##How-it-Works)
-3. [Characteristics of Machine Learning](#characteristics-of-machine-learning)
-4. [Pros of Machine Learning](1.%20#pros-of-machine-learning)
-5. [Cons of Machine Learning](1.%20#cons-of-machine-learning)
-6. [Classification of Machine Learning](#classification-of-machine-learning)
-7. [Machine Learning Life Cycle](#machine-learning-life-cycle)
-8. [Differences Between AI, ML, and DL](#differences-between-ai-ml-and-dl)
-9. [AI Classification](#ai-classification)
-10. [Data Preprocessing Steps](#data-preprocessing-steps)
-11. [Features & Labels](#features--labels)
-12. [Supervised Learning](#supervised-learning)
-13. [Unsupervised Learning](#unsupervised-learning)
+1. [Overview](1.%20##Overview)
+2. [How It Works](1.%20##How-It-Works)
+3. [Characteristics of Machine Learning](1.%20##Characteristics-of-Machine-Learning)
+4. [Pros of Machine Learning](1.%20##Pros-of-Machine-Learning)
+5. [Cons of Machine Learning](1.%20##Cons-of-Machine-Learning)
+6. [Classification of Machine Learning](1.%20##Classification-of-Machine-Learning)
+7. [Machine Learning Life Cycle](1.%20##Machine-Learning-Life-Cycle)
+8. [Differences Between AI, ML, and DL](1.%20##Differences-Between-Ai-Ml-and-Dl)
+9. [AI Classification](1.%20##Ai-Classification)
+10. [Data Preprocessing Steps](1.%20##Data-Preprocessing-Steps)
+11. [Features & Labels](1.%20##Features--Labels)
+12. [Supervised Learning](1.%20##Supervised-Learning)
+13. [Unsupervised Learning](1.%20##Unsupervised-Learning)
 
 
