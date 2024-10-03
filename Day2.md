@@ -205,7 +205,7 @@ Random Forest is an ensemble learning method that constructs multiple decision t
 `Real-life scenario:` Predicting if a loan applicant will `default` based on income, credit score, and employment history.
 
 ### Visualization 
-![Decision Trees Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/Random-Forest-Algorithm.webp)
+![Decision Trees Flowchart](https://raw.githubusercontent.com/tayyab-balti/AI-Internship/master/Images/Random-Forest-Algorithm.png)
 
 ### Pros
 - Handles large datasets well.
